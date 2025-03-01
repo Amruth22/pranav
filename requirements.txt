@@ -1,0 +1,12 @@
+# Core dependencies
+requests>=2.28.0
+python-dotenv>=0.20.0
+
+# NLP and ML libraries (to be expanded as needed)
+nltk>=3.7.0
+# transformers>=4.20.0  # Uncomment when implementing more advanced NLP features
+
+# Development dependencies
+pytest>=7.0.0
+black>=22.3.0
+flake8>=4.0.1
