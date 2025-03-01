@@ -7,7 +7,8 @@
   "capabilities": [
     "text_processing",
     "basic_conversation",
-    "task_scheduling"
+    "task_scheduling",
+    "persistent_memory"
   ],
   "nlp": {
     "model": "basic",
@@ -23,6 +24,19 @@
       "/task",
       "/status"
     ]
+  },
+  "storage": {
+    "type": "json",
+    "path": "data/storage",
+    "backup": {
+      "enabled": true,
+      "interval_hours": 24,
+      "max_backups": 7
+    },
+    "encryption": {
+      "enabled": false,
+      "key_file": "config/encryption_key.bin"
+    }
   },
   "logging": {
     "level": "INFO",
