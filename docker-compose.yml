@@ -11,8 +11,13 @@ services:
       - ./config:/app/config
       # Mount logs directory for persistence
       - ./logs:/app/logs
+      # Mount data directory for persistent storage
+      - ./data:/app/data
     environment:
       - ENVIRONMENT=production
+      # Storage configuration
+      - STORAGE_TYPE=json
+      - STORAGE_PATH=/app/data/storage
       # Add any other environment variables your agent might need
     restart: unless-stopped
     # If you implement an API server, uncomment the ports section
