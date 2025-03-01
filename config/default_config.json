@@ -1,0 +1,33 @@
+{
+  "agent": {
+    "name": "Pranav",
+    "version": "0.1.0",
+    "description": "Intelligent agent system for task automation and assistance"
+  },
+  "capabilities": [
+    "text_processing",
+    "basic_conversation",
+    "task_scheduling"
+  ],
+  "nlp": {
+    "model": "basic",
+    "confidence_threshold": 0.7,
+    "language": "en"
+  },
+  "api": {
+    "enabled": false,
+    "port": 5000,
+    "host": "localhost",
+    "endpoints": [
+      "/query",
+      "/task",
+      "/status"
+    ]
+  },
+  "logging": {
+    "level": "INFO",
+    "file": "logs/agent.log",
+    "max_size": "10MB",
+    "backup_count": 3
+  }
+}
